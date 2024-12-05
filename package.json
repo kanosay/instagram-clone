@@ -1,0 +1,12 @@
+{
+  "name": "instagram-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "compile": "sass style.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
