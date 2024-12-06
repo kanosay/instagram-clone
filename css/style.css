@@ -72,5 +72,116 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.699);
+}
+.header .header__inner {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__inner .header__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header .header__inner .header__switch {
+  margin-right: 3rem;
+}
+.header .header__inner .header__switch img {
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.character {
+  padding-top: 10px;
+}
+.character .character__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.character .character__header img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.character .character__header .character__title {
+  font-size: 13px;
+}
+.character .character__header .character__title h2 {
+  font-weight: 700;
+  padding-bottom: 3px;
+}
+.character .character__post {
+  width: 100%;
+}
+.character .character__links {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  gap: 0 40px;
+}
+.character .character__links li i {
+  font-size: 30px;
+}
+.character .character__links li .like {
+  color: red;
+}
+.character .character__links li .fa-heart {
+  transition: all 0.3s ease;
+}
+.character .character__links li .fa-heart:hover {
+  color: red;
+}
+.character .likes {
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.character .form {
+  display: none;
+}
+.character .form__active {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.character .form__active .text {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px 15px;
+  width: 210px;
+  height: 60px;
+}
+.character .form__active .submit {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.character .character__comments li {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.character .character__comments li span {
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=style.css.map */

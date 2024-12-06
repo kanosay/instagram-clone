@@ -9,11 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32167794d8.js" crossorigin="anonymous"></script>
     <title>Oldagram</title>
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img src="img/logo/oldagram-logo.svg" alt="" class="header__logo header__logo-white">
+                <a id="switch" class="header__switch" href="#">
+                    <img class="dark" src="img/dark-ligh/dark.png" alt="">
+                </a>
+                <img src="img/avatar/avatar.jpg" alt="" class="header__avatar">
+            </div>
+        </div>
+    </header>
+    <section class="character">
+        <div class="container">
+            <div class="character__header">
+                <img src="img/characters/vanGogh/avatar-vangogh.jpg" alt="">
+                <div class="character__title">
+                    <h2>Vincent van Gogh</h2>
+                    <p>Zudert, Netherlands</p>
+                </div>
+            </div>
+        </div>
+        <img class="character__post" src="img/characters/vanGogh/post-vangogh.jpg" alt="">
+        <div class="container">
+            <ul class="character__links">
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-message"></i></li>
+                <li><i class="fa-regular fa-paper-plane"></i></li>
+            </ul>
+            <form id="com" class="form" action="">
+                <input class="text" type="text">
+                <input class="submit" type="submit" value="SUBMIT">
+            </form>
+            <p class="likes">21,340 likes</p>
+            <ul class="character__comments">
+                <li><span>vincey1853</span> just took a few mushrooms lol</li>
+            </ul>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 

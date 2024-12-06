@@ -1,3 +1,121 @@
 @use 'css/reset.scss';
 
 $font-family: "Source Sans 3", sans-serif;
+
+body {
+    font-family: $font-family;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* header */
+
+
+.header {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.699);
+    .header__inner {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .header__switch {
+            margin-right: 3rem;
+            img {
+                padding: 5px;
+                border-radius: 50%;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.character {
+    padding-top: 10px;
+    .character__header {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        img {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .character__title {
+            font-size: 13px;
+            h2 {
+                font-weight: 700;
+                padding-bottom: 3px;
+            }
+        }
+    }
+    .character__post {
+        width: 100%;
+    }
+    .character__links {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        gap: 0 40px;
+        li {
+            i {
+                font-size: 30px;
+            }
+            .like {
+                color: red;
+            }
+            .fa-heart {
+                transition: all 0.3s ease;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+    .likes {
+        font-weight: 700;
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+    .form {
+        display: none;
+    }
+    .form__active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        .text {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 30px 15px;
+            width: 210px;
+            height: 60px;
+        }
+        .submit {
+            margin-left: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+    .character__comments {
+        li {
+            font-size: 18px;
+            padding-bottom: 15px;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
