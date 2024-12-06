@@ -140,13 +140,13 @@ body {
   font-size: 30px;
 }
 .character .character__links li .like {
-  color: red;
+  color: red !important;
 }
 .character .character__links li .fa-heart {
   transition: all 0.3s ease;
 }
 .character .character__links li .fa-heart:hover {
-  color: red;
+  color: red !important;
 }
 .character .likes {
   font-weight: 700;
